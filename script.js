@@ -67,3 +67,12 @@ rollDice.addEventListener('click',function(){
      // document.(`score--${activePlayer}`).textContent=currentScore
       document.getElementById(`score--${activePlayer}`).textContent=currentScore
    })
+   newDice.addEventListener('click',function(){
+  	score1.textContent=0;
+    score0.textContent=0;
+    currentScore=0;
+    activePlayer=0;
+	player0E.classList.add('player--active');
+	player1E.classList.remove('player--active');
+
+  })
